@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface com Botões</title>
+
+</head>
+        <body>
+        <script>
+            function mostrarAlerta(botao) {
+                var mensagem; // Declaração da variável mensagem
+
+                switch (botao) { // Estrutura de controle switch para verificar o valor do parâmetro botao
+                    case 1: // Caso o valor de botao seja 1
+                        mensagem = "Você clicou no 1° botão!"; // Atribui a mensagem "Você clicou no 1° botão!" à variável mensagem
+                        break; // Sai do switch
+                    case 2: // Caso o valor de botao seja 2
+                        mensagem = "Você clicou no 2° botão!"; // Atribui a mensagem "Você clicou no 2° botão!" à variável mensagem
+                        break; // Sai do switch
+                    case 3: // Caso o valor de botao seja 3
+                        mensagem = "Você clicou no 3° botão!"; // Atribui a mensagem "Você clicou no 3° botão!" à variável mensagem
+                        break; // Sai do switch
+                    default: // Caso o valor de botao não seja nenhum dos casos anteriores
+                        mensagem = "Botão inválido!"; // Atribui a mensagem "Botão inválido!" à variável mensagem
+                }
+
+                alert(mensagem); // Exibe a mensagem em um alerta
+            }
+        </script>
+
+    <button onclick="mostrarAlerta(1)">Botão 1</button>
+    <button onclick="mostrarAlerta(2)">Botão 2</button>
+    <button onclick="mostrarAlerta(3)">Botão 3</button>
+</body>
+
+</html>

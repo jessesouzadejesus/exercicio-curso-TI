@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface do Visitante</title>
+</head>
+<script>
+    function Informacoes() {
+        const nome = prompt("Qual é o seu nome?");
+        const idade = prompt("Olá, " + nome + "! Quantos anos você tem?");
+        let mensagem = "Acabei de conhecer " + nome + ", que tem " + idade + " anos de idade!";
+        alert(mensagem);
+    }
+</script>
+
+<h1>Bem-vindo à Interface do Visitante</h1>
+<button onclick="Informacoes()">ìnicie o desafio</button>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    margin: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+</style>
+</body>
+
+</html>
